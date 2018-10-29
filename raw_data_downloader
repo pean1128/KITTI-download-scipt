@@ -164,7 +164,7 @@ files=(2011_09_26_calib.zip
  
 
 ########filter out the downloaded files#######
-rootpath=/home/likewise-open/SENSETIME/tangzhongliang/Downloads/raw_data/
+rootpath=/raw_data/
 dir=$(ls $1)
 for dirname in $dir; do  
 	if [ -d $dirname ]
