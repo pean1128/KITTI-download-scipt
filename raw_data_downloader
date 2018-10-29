@@ -164,12 +164,13 @@ files=(2011_09_26_calib.zip
  
 
 ########filter out the downloaded files#######
-rootpath=/raw_data/
+#rootpath=/raw_data/
 dir=$(ls $1)
 for dirname in $dir; do  
 	if [ -d $dirname ]
 	then
-   		 filepath=$rootpath$dirname
+   		 #filepath=$rootpath$dirname
+		 filepath=$dirname
 	fi
 	subfiles=$(ls $filepath)
 	for f in $subfiles; do
